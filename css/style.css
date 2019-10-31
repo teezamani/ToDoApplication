@@ -1,0 +1,144 @@
+body{
+    background-color: rgba(0,0,0,0.1);
+}
+.container{
+    width: 400px;
+    padding: 5px  0px 0px 0px;
+    font-family:  sans-serif;
+}
+/*                  header               */
+.header{
+    position: relative;
+    color: white;
+    font-size: 22px;
+}
+.header img{
+    height: 220px;
+    width: 100%;
+    border-radius:18px 18px 0px 0px;
+}
+.clear{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+.clear i{
+    font-size: 30px;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+#date{
+    position: absolute;
+    top: 16px;
+    left: 10px;
+}
+#addform{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+#addform input{
+    background: transparent;
+    /* font-size: 16px; */
+    font-weight: bold;
+    height: 28px;
+    padding: 2px 10px;
+    width: 120px;
+    border: 1px solid gray;
+    transition: width 2s;
+}
+#addform input:hover{
+    width: 280px;
+}
+#time{
+    position: absolute;
+    height: 28px;
+    bottom: 10px;
+    left: 10px;
+    background: transparent;
+    font-size: 15px;
+    color: gray;
+}
+#demo{
+margin: 0px 0px 0px 0px;
+text-transform: capitalize;
+}    
+/*               list of items           */
+.content{
+    height: 310px;
+    max-height:310px;
+    background-color: #FFF;
+    overflow-x: hidden;
+    background: white;
+    font-size: 20px;
+}
+.content ul{
+    list-style: none;
+    padding:0px 0px 0px 0px;
+}
+.item{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 5px 0px 0px  8px;
+    text-transform: capitalize;
+    /* display: flex; */
+}
+
+.item i.co:hover{
+    cursor: pointer;
+}
+.fa-check-circle{
+    color:#6eb200;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+.item i.de{
+    margin: auto;
+    padding-top: 7px;
+    cursor: pointer;
+}
+.item i.de:hover{
+    color:#af0000;
+    cursor: pointer;
+} 
+
+
+/* ------------ add item ------------ */
+
+.addtodo{
+    background: white;
+    padding: 20px 10px 10px 10px;
+    position: relative;
+}
+.addtodo input{
+   
+    font-size: 18px;
+    padding: 4px 10px;
+    color: gray;
+    width: 220px;
+    border: 1px solid rgb(223, 222, 222);
+}
+.addtodo input[type=submit]{
+    border-radius: 0px 10px 0px 0px;
+    margin: 0px 0px 0px -5px;
+    width: 70px;
+    padding: 4px 0px;
+    background: transparent;
+    color: rgb(72, 80, 79);
+}
+#added{
+    display: none; 
+    position: absolute;
+    bottom: 18px;
+    right:25px;
+}
+.del{
+    display: none;
+}
+#wel{
+    display: none;
+}

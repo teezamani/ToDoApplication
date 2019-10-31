@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo App</title>
+    <script type="text/javascript" src="bootstrap/js/popper.min.js"></script>
+    <script  type="text/javascript" src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/bg.jpg" class="img-fluid" alt="">
+            <p id="date"></p>
+            <div class="clear"><i class="fa fa-refresh"></i></div>
+            <form action="" id="addform" class="form-inline">
+                <div class="form-group">
+                    <input type="text" placeholder="Search for ToDo ..." class="form-control" id="filter" >
+                </div>
+            </form>
+        </div>
+        <div class="content">
+                <marquee behavior="" direction=""><p id="demo" class="text-capitalise"></p></marquee>            
+                <div class="alert alert-success" id="wel">To do list Successfuly cleared!!!</div>
+                <div class=" del alert alert-danger alert-dismissible fade show" id="delete"> Deleted </div>
+                <ul id="list">
+                <!-- <li class="item">
+                    <i class="fa fa-circle-thin co" job="complete" id="0"></i>
+                    <span class="text">Drink Coffee go </span>
+                    <i class="fa fa-trash-o de float-right" job="delete" id="0"></i> 
+                </li> -->
+            </ul>
+        </div>
+        <div class="addtodo">
+            <form action="" id="form" class="">
+                <input type="text" name="" id="input"  placeholder="Add to to do List.." required>
+                <input type="submit" class="add" value="Add"> <span id="added"><i class="fa fa-check-circle"> Added</i></span>
+            </form>
+        </div>
+    </div>  
+    <script src="js/app.js"></script>
+</body>
+</html>
